@@ -3,11 +3,10 @@ import pymysql.cursors
 import pymysql
 import array
 
-import urllib3,os
+import os
 from pygame import mixer
 from gtts import gTTS
 
-urllib3.disable_warnings()
 
 class db:
     
@@ -108,7 +107,7 @@ class StartPage(tk.Frame):
        
         self.controller.title("File Reader")
         self.controller.state("zoomed")
-        self.controller.iconphoto(False,tk.PhotoImage(file='D:/Study/CODE/Python/Shailja/FileReader/Reader.png'))
+        self.controller.iconphoto(False,tk.PhotoImage(file='D:/Study/CODE/Python/TextToSpeechApp/Reader.png'))
         
         heading_label = tk.Label(self,
                                 text='File Reader',
@@ -264,12 +263,12 @@ class MenuPage(tk.Frame):
             else:
                 myobj = gTTS(text=file_text, lang='en', slow=False)
         
-            if (os.path.exists("D:/Study/CODE/Python/Shailja/FileReader/readcon.mp3")):
-                os.remove("D:/Study/CODE/Python/Shailja/FileReader/readcon.mp3")
+            if (os.path.exists("D:/Study/CODE/Python/TextToSpeechApp/readcon.mp3")):
+                os.remove("D:/Study/CODE/Python/TextToSpeechApp/readcon.mp3")
     
             myobj.save("readcon.mp3");
             mixer.init()
-            mixer.music.load('D:/Study/CODE/Python/Shailja/FileReader/readcon.mp3')
+            mixer.music.load('D:/Study/CODE/Python/TextToSpeechApp/readcon.mp3')
             mixer.music.play()
             while mixer.music.get_busy() == True:
                 continue
