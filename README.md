@@ -1,6 +1,6 @@
 # TextToSpeechApp
 
-Create a small application using tkinter which will accept text given by the User and the app will read aloud the text.
+Created a small application using tkinter which will accept text given by the User and the app will read aloud the text.
 
 ## NOTE 
      - I know it's not required for this kind of app but also added a login and registraion page for only authorised user can access the "READ ALOUD" feature.
