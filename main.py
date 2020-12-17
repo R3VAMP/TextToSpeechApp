@@ -507,7 +507,7 @@ class SuccessPage(tk.Frame):
                                 height=3)
         back_button.pack(pady=40)
 
-
+# MAIN 
 if __name__ == "__main__":
     app = SampleApp()
     app.mainloop()
