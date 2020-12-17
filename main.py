@@ -2,11 +2,10 @@ import tkinter as tk
 import pymysql.cursors
 import pymysql
 import array
-
+    
 import os
 from pygame import mixer
 from gtts import gTTS
-
 
 class db:
     
