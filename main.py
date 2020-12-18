@@ -7,6 +7,7 @@ import os
 from pygame import mixer
 from gtts import gTTS
 
+# Reference (class db) :  https://github.com/raviSanchala/PyMYSQL-class/blob/master/mysql_connect.py
 class db:
     
     def __init__(self):
